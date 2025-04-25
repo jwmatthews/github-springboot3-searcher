@@ -1,0 +1,33 @@
+{
+  "name": "github-springboot3-searcher",
+  "version": "1.0.0",
+  "description": "CLI tool to search GitHub for public Java repositories using Spring Boot 3",
+  "main": "dist/index.js",
+  "bin": {
+    "sb3-search": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "spring-boot",
+    "java",
+    "cli",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.15.2",
+    "axios": "^1.9.0",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
